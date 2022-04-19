@@ -3,7 +3,6 @@ export function SeeModal(){
     let modal=document.querySelector('.popup-call')
     callbtn.addEventListener('click',()=>{
         modal.style.display='block';
-        console.log(callbtn)
     })
     
 }
