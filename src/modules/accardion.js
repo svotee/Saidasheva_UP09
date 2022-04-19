@@ -3,7 +3,7 @@ export function Accardion(){
     let all_quest_txt=document.querySelectorAll('.panel-collapse');
 
     quest_acc.addEventListener('click',(e)=>{
-        // e.defaultPrevented()
+        e.preventDefault()
         if(e.target.closest('.panel-heading')){
             all_quest_txt.forEach((item)=>{
                 item.style.display='none';
