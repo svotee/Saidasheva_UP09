@@ -1,5 +1,5 @@
 export function SeeModal(){
-    let callbtn=document.querySelector('.call-btn');
+    let callbtn=document.querySelectorAll('.call-btn');
     let modal=document.querySelector('.popup-call')
 
     let modal_two=document.querySelector('.popup-discount')
@@ -13,8 +13,6 @@ export function SeeModal(){
     })
 
 
-
-
     callbtn_two.forEach((item)=>{
         item.addEventListener('click',()=>{
             modal_two.style.display='block'
@@ -22,9 +20,9 @@ export function SeeModal(){
     })
 
 
-
-    callbtn.addEventListener('click',()=>{
-        modal.style.display='block';
-    })
+    callbtn.forEach((item)=>
+        item.addEventListener('click',()=>{
+            modal.style.display='block';
+    }))
     
 }
