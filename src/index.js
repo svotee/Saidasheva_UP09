@@ -3,9 +3,10 @@ import{CloseModal} from "./modules/modal-window-close.js";
 import{ValidModal} from "./modules/modal-window-vlid.js";
 import{SeeMore} from "./modules/seemore.js"
 import{Accardion} from "./modules/accardion.js"
-
+//доделанное
 SeeModal()
 CloseModal()
-ValidModal()
-SeeMore()
 Accardion()
+//недоделанное
+SeeMore()
+ValidModal()
